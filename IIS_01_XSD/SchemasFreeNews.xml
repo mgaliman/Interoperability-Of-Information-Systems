@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FreeNewsModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>1</Title>
+  <Author>2</Author>
+  <PublishedDate>3</PublishedDate>
+  <PublishedDatePrecision>4</PublishedDatePrecision>
+  <Link>5</Link>
+  <CleanUrl>6</CleanUrl>
+  <Summary>7</Summary>
+  <Rights>8</Rights>
+  <Rank>9</Rank>
+  <Topic>10</Topic>
+  <Country>11</Country>
+  <Language>12</Language>
+  <Authors>
+    <string>Marko</string>
+    <string>Luka</string>
+    <string>Ivan</string>
+  </Authors>
+  <Media>14</Media>
+  <IsOpinion>true</IsOpinion>
+  <TwitterAccount>16</TwitterAccount>
+  <Score>17</Score>
+  <Id>18</Id>
+</FreeNewsModel>

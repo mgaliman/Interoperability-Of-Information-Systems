@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/mgali/Desktop/Projects/Interoperability%20Of%20Information%20Systems/Java/IIS_04_JAXB/../../../../JAXB.xsd" uri="xml-resources/jaxb/JAXB/JAXB.xsd"/>
+</catalog>

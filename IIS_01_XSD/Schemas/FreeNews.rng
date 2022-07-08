@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<element name="FreeNewsModel" xmlns="http://relaxng.org/ns/structure/1.0"
+		datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+	<oneOrMore>
+		<element name="Title">
+			<text/>
+		</element>
+		<element name="Author">
+			<text/>
+		</element>
+		<element name="PublishedDate">
+			<text/>
+		</element>
+		<element name="PublishedDatePrecision">
+			<text/>
+		</element>
+		<element name="Link">
+			<text/>
+		</element>
+		<element name="CleanUrl">
+			<text/>
+		</element>
+		<element name="Summary">
+			<text/>
+		</element>
+		<element name="Rights">
+			<text/>
+		</element>
+		<element name="Rank">
+			<text/>
+		</element>
+		<element name="Topic">
+			<text/>
+		</element>
+		<element name="Country">
+			<text/>
+		</element>
+		<element name="Language">
+			<text/>
+		</element>
+		<element name="Authors">
+			<element name="string">
+				<text/>
+			</element>
+		</element>
+		<element name="Media">
+			<text/>
+		</element>
+		<element name="IsOpinion">
+			<text/>
+		</element>
+		<element name="TwitterAccount">
+			<text/>
+		</element>
+		<element name="Score">
+			<text/>
+		</element>
+		<element name="Id">
+			<text/>
+		</element>
+	</oneOrMore>
+</element>

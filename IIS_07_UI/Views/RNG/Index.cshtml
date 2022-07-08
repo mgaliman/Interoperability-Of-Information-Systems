@@ -1,0 +1,101 @@
+﻿@model IIS_0102_XSD_RNG.Models.FreeNewsModel
+
+@using (Html.BeginForm("Create", "RNG"))
+{
+    <div style="margin-left:30%;margin-right:30%">
+        <div class="form-group">
+            @Html.LabelFor(m => m.Title)
+            @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Title, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Author)
+            @Html.TextBoxFor(m => m.Author, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Author, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.PublishedDate)
+            @Html.TextBoxFor(m => m.PublishedDate, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PublishedDate, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.PublishedDatePrecision)
+            @Html.TextBoxFor(m => m.PublishedDatePrecision, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.PublishedDatePrecision, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Link)
+            @Html.TextBoxFor(m => m.Link, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Link, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.CleanUrl)
+            @Html.TextBoxFor(m => m.CleanUrl, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.CleanUrl, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Summary)
+            @Html.TextBoxFor(m => m.Summary, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Summary, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Rights)
+            @Html.TextBoxFor(m => m.Rights, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Rights, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Rank)
+            @Html.TextBoxFor(m => m.Rank, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Rank, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Topic)
+            @Html.TextBoxFor(m => m.Topic, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Topic, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Country)
+            @Html.TextBoxFor(m => m.Country, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Country, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Language)
+            @Html.TextBoxFor(m => m.Language, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Language, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Authors)
+            @Html.TextBoxFor(m => m.Authors, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Authors, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Media)
+            @Html.TextBoxFor(m => m.Media, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Media, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.IsOpinion)
+            @Html.TextBoxFor(m => m.IsOpinion, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.IsOpinion, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.TwitterAccount)
+            @Html.TextBoxFor(m => m.TwitterAccount, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.TwitterAccount, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Score)
+            @Html.TextBoxFor(m => m.Score, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Score, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Id)
+            @Html.TextBoxFor(m => m.Id, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Id, "", new { @class = "text-danger" })
+        </div>
+        @Html.ValidationSummary(true, "Insert required data!")
+        @Html.AntiForgeryToken()
+        <a class="btn btn-danger" onclick="history.go(-1); return false;" href="#">Cancle</a>
+        <button type="submit" class="btn btn-primary" style="float:right">Save</button>
+    </div>
+}

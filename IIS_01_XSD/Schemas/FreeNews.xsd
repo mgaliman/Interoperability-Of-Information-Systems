@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xsd:element name="FreeNewsModel">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Title" type="xsd:string" />
+				<xsd:element name="Author" type="xsd:string" />
+				<xsd:element name="PublishedDate" type="xsd:string" />
+				<xsd:element name="PublishedDatePrecision" type="xsd:string" />
+				<xsd:element name="Link" type="xsd:string" />
+				<xsd:element name="CleanUrl" type="xsd:string" />
+				<xsd:element name="Summary" type="xsd:string" />
+				<xsd:element name="Rights" type="xsd:string" />
+				<xsd:element name="Rank" type="xsd:integer" />
+				<xsd:element name="Topic" type="xsd:string" />
+				<xsd:element name="Country" type="xsd:string" />
+				<xsd:element name="Language" type="xsd:string" />
+				<xsd:element name="Authors">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element maxOccurs="unbounded" name="string" type="xsd:string" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Media" type="xsd:string" />
+				<xsd:element name="IsOpinion" type="xsd:boolean" />
+				<xsd:element name="TwitterAccount" type="xsd:string" />
+				<xsd:element name="Score" type="xsd:decimal" />
+				<xsd:element name="Id" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xs:schema>

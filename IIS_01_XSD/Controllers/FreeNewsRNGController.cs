@@ -30,15 +30,13 @@ namespace IIS_0102_XSD_RNG.Controllers
             try
             {
                 string path = Path.GetFullPath("Schemas");
-                XmlSchemaSet schema = new XmlSchemaSet();
-                schema.Add("", path + "\\FreeNews.xsd");
                 XmlDocument xmlDocument = new XmlDocument();
                 xmlDocument.LoadXml(xml);
                 xmlDocument.Save(path + "\\FreeNews.xml");
 
                 XmlReader xmlReaderXML = XmlReader.Create(path + "\\FreeNews.xml");
                 XmlReader xmlReaderRNG = new XmlTextReader(path + "\\FreeNews.rng");
-
+                
                 XmlReader rd = new RelaxngValidatingReader(xmlReaderXML, xmlReaderRNG);
                 XDocument doc = XDocument.Load(rd);
             }

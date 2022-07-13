@@ -10,7 +10,7 @@ namespace IIS_07_UI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Result(string? data)
+        public IActionResult Data(string? data)
         {
 
             if (!String.IsNullOrEmpty(data))

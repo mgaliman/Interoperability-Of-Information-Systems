@@ -17,6 +17,7 @@ namespace IIS_0102_XSD_RNG.Controllers
         {            
             string xml;
 
+            //Gets from view model, Serialize it in XML format
             XmlSerializer xmlSerializer = new XmlSerializer(freeNewsModel.GetType());
 
             using (StringWriter textWriter = new Utf8StringWriter())
@@ -24,7 +25,7 @@ namespace IIS_0102_XSD_RNG.Controllers
                 xmlSerializer.Serialize(textWriter, freeNewsModel);
                 xml = textWriter.ToString();
             }
-
+            //Creates schema file for xml/xsd
             string path = Path.GetFullPath("Schemas");
             XmlSchemaSet schema = new XmlSchemaSet();
             schema.Add("", path + "\\FreeNews.xsd");
@@ -33,6 +34,7 @@ namespace IIS_0102_XSD_RNG.Controllers
             xmlDocument.Save(path + "\\FreeNews.xml");
             XmlReader rd = XmlReader.Create(path + "\\FreeNews.xml");
             XDocument doc = XDocument.Load(rd);
+            //File gets validated
             try
             {
                 doc.Validate(schema, ValidationEventHandler);

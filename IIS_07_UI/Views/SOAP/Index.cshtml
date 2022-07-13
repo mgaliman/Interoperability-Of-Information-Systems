@@ -1,12 +1,18 @@
-﻿@using (Html.BeginForm("Result", "SOAP"))
+﻿@{
+    ViewData["Title"] = "SOAP";
+}
+
+@using (Html.BeginForm("Data", "SOAP"))
 {
-    <div style="margin-left:30%;margin-right:30%">
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center">
         <div class="form-group">
             @Html.Label("Insert data:")
             @Html.TextBox("data")
         </div>
         
-        <a class="btn btn-danger" onclick="history.go(-1); return false;" href="#">Cancle</a>
-        <button type="submit" class="btn btn-primary" style="float:right">Save</button>
+        <div style="display:flex;gap:60%;padding:1%">
+            <a class="btn btn-danger" onclick="history.go(-1); return false;" href="#">Cancle</a>
+            <button type="submit" class="btn btn-primary" style="float:right">Save</button>
+        </div>
     </div>
 }

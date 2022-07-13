@@ -13,6 +13,7 @@ public class IIS_04_JAXB {
 
     public static void main(String[] args) {
         try {
+            //Gets XML file from SOAP, and validates it from XSD binding file
             JAXBContext jc = JAXBContext.newInstance(FreeNewsItems.class);
             Marshaller m = jc.createMarshaller();
             

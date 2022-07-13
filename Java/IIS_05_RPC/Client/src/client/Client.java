@@ -15,6 +15,7 @@ public class Client {
 
     public static void main(String[] args) {
         try {
+            //Connecting RPC jar service and server
             XmlRpcClientConfigImpl config = new XmlRpcClientConfigImpl();
             config.setServerURL(new URL("http://localhost:8080"));
             config.setEnabledForExceptions(true);

@@ -1,4 +1,8 @@
-﻿@model IIS_0102_XSD_RNG.Models.FreeNewsModel
+﻿@{
+    ViewData["Title"] = "XSD";
+}
+
+@model IIS_0102_XSD_RNG.Models.FreeNewsModel
 
 @using (Html.BeginForm("Create", "XSD"))
 {
@@ -95,7 +99,9 @@
         </div>
         @Html.ValidationSummary(true, "Insert required data!")
         @Html.AntiForgeryToken()
-        <a class="btn btn-danger" onclick="history.go(-1); return false;" href="#">Cancle</a>
-        <button type="submit" class="btn btn-primary" style="float:right">Save</button>
+        <div style="padding:1%">
+            <a class="btn btn-danger" onclick="history.go(-1); return false;" href="#">Cancle</a>
+            <button type="submit" class="btn btn-primary" style="float:right">Save</button>
+        </div>
     </div>
 }
